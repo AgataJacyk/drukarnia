@@ -1,16 +1,31 @@
-* {
-  background: #1e1e1e;
+@font-face {
+  font-family: "ShadowedBlack";
+  src: local("ShadowedBlack"), 
+  url(../fonts/Shadowed_Black_Wide.otf) format("truetype");
 }
-h1,
+@font-face {
+  font-family: "Bellerose";
+  src: local("Bellerose"), 
+  url(../fonts/Bellerose.otf) format("truetype");
+}
+
+body {
+  background: linear-gradient(180deg, #1B1A18 0%, #252422 100%);
+}
+
+a,
+b,
+h5,
+h6,
+i,
+p {
+  color: #606060;
+  font-family: "Bellerose";
+}
+
 h2,
 h3,
-h4,
-h5,
-h6 {
-  color: #606060;
-  font-family: "UnifrakturMaguntia";
-}
-.logo {
-  height: 66px;
-  width: 297px;
+h4 {
+  font-size: "ShadowedBlack";
+  color: #8b8a8a;
 }
