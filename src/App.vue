@@ -1,5 +1,7 @@
 <template>
-<HomeViewVue></HomeViewVue>
+  <Header />
+    <RouterView />
+    <Footer />
 </template>
 
 <script>
