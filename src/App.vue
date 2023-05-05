@@ -4,16 +4,6 @@
     <Footer />
 </template>
 
-<script>
-import HomeViewVue from "./views/HomeView.vue"
-
-
-export default {
-components: {
-  HomeViewVue,
-}
-}
-</script>
 
 <style scoped>
 header {
