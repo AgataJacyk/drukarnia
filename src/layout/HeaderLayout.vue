@@ -204,12 +204,12 @@ input {
     z-index: 10;
   }
   .toggler:checked ~ .menu {
-    width: 50vw;
-    max-width: 50vw;
-    height: 50vh;
+    width: 30vw;
+    max-width: 30vw;
+    height: 70vh;
     position: absolute;
-    top: 20vh;
-    right: 30px;
+    top: 10vh;
+    right: 1vw;
   }
   .menu > div > ul {
     display: flex;
@@ -217,6 +217,7 @@ input {
     margin-top: 10px;
     visibility: hidden;
     > li {
+      color: #ffffff;
       list-style: none;
       width: 100%;
       margin-top: 40px;
@@ -224,5 +225,22 @@ input {
       font-size: calc(32px + (46 - 32) * ((100vw - 300px) / (1550 - 300)));
     }
   }
+  .toggler:checked ~ .menu > div > ul {
+    transition: visibility 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: visible;
+  }
+  
+li:hover{
+  margin-left: 0;
+  cursor: pointer;
+  border-left: 10px solid #252422;
+  color: #ffffff;
+}
+
+li:hover > span{
+  color: #ffffff;
+  transform: rotate(-5deg);
+}
 }
 </style>
