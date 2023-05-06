@@ -1,28 +1,23 @@
 
 <!-- Tu pracuję  -->
 <template>
-<div class="container-fluid">
-<h2>Ostatnie prace</h2>
-  <div class="row">
-    <div class="col-lg-3">
-    <img src="/images/istockphoto-914345616-612x612.jpg" />
-    </div>
-    <div class="col-lg-3">
-        <img src="/images/istockphoto-146745759-612x612.jpg" />
-    </div>
-    <div class="col-lg-3">
-        <img src="/images/istockphoto-1221568150-612x612.jpg" />
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card  text-center">
+      <div class="card-body">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-secondary">Go somewhere</a>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-lg-3">
-    <img src="/images/istockphoto-545775574-612x612.jpg" />
-    </div>
-    <div class="col-lg-3">
-        <img src="/images/istockphoto-1043200194-612x612.jpg" />
-    </div>
-    <div class="col-lg-3">
-        <img src="/images/istockphoto-1218505360-612x612.jpg" />
+  <div class="col-sm-6">
+    <div class="card  text-center">
+      <div class="card-body">
+        <h2 class="card-title">Special title treatment</h2>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-secondary text-center">Go somewhere</a>
+      </div>
     </div>
   </div>
 </div>
@@ -30,21 +25,61 @@
 
 <style scoped>
 h2 {
+    color:#8b8a8a;
     font-family: "ShadowedBlack";
 }
-.container-fluid { 
-    width: 92vw;
+.btn {
+--border: 5px;    /* the border width */
+  --slant: 0.7em;   /* control the slanted corners */
+  --color: #606263; /* the color */
+
+  font-family: "Bellerose";
+font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (2865 - 300)));
+padding-bottom: 20px;
+text-align: center;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+  transition: color var(--t,0.3s), background-size 0.3s;
+}
+.btn:focus-visible {
+  outline-offset: calc(-1*var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
+}
+.btn:hover,
+.btn:active{
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
+.btn:active {
+  --s: #0005;
+  transition: none;
+}
+.card { 
+background: linear-gradient(72.77deg, #0e0d0d1d 11.72%, #8b8a8a2d 98.52%);
+backdrop-filter: blur(10px);
+}
+.card-title, .card-text, .btn {
+    text-align: center;
+}
+.row { 
+    width: 70vw;
     margin: 10vh 4vw;
-    padding: 0;
-}
-.row {
-    width: 90vw;
-}
-img {
-    width: 100%;
-    filter: grayscale(100%);
-}
-.col-lg-3:hover img {
-    filter: grayscale(0%);
 }
 </style>
