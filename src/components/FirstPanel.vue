@@ -159,4 +159,27 @@
     transform: translate(0, 0);
   }
 }
+
+@media (max-width: 1350px) {
+
+  .carousel {
+  filter: grayscale(100%);
+  width: 97vw;
+}
+.carousel:hover {
+  filter: grayscale(0%);
+}
+.carousel-item {
+  width: 100vw;
+}
+.image-wrapper {
+  width: 100vw;
+  height: 60vh;
+  margin: 5vh 0;
+}
+
+.image-wrapper img {
+  width: 100vw;
+}
+}
 </style>
