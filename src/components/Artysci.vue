@@ -19,7 +19,7 @@
       </div>
     </div>
   </div>
-  <div class=" card border-secondary mb-3 bg-transparent mb-3">
+  <div class=" card border-secondary bg-transparent mb-3">
     <div class="row g-0">
       <div class="col-md-5">
         <img
