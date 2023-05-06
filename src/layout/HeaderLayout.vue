@@ -22,6 +22,10 @@
     <span><h1>O</h1></span>
    O nas</router-link>
   </li>
+  <li><router-link to="/Contact">
+    <span><h1>K</h1></span>
+   Kontakt</router-link>
+  </li>
   <li><router-link to="/Cart">
     <span><h1>K</h1></span>
    Koszyk</router-link>
@@ -39,7 +43,7 @@ a {
 ul{
   position: fixed;
   right: 5vw;
-  top: 20vh;
+  top: 15vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
