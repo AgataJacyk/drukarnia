@@ -1,26 +1,47 @@
 <template>
-  <div class="card mb-3" style="max-width: 540px">
+  <div class="card mb-3 ms-5 me-5" style="max-width: 540px">
     <div class="row g-0">
-      <div class="col-md-4">
+      <div class="col-md-5">
         <img
           src="images/istockphoto-1199849059-612x612.jpg"
-          class="img-fluid rounded-start"
+          class="img-fluid rounded-start p-0"
           alt="..."
         />
       </div>
-      <div class="col-md-8">
+      <div class="col-md-7">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3 ms-5 me-5" style="max-width: 540px">
+    <div class="row g-0">
+      <div class="col-md-5">
+        <img
+          src="images/istockphoto-615517560-612x612.jpg"
+          class="img-fluid rounded-start p-0"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
           <p class="card-text">
-            <small class="text-body-secondary">Last updated 3 mins ago</small>
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
           </p>
         </div>
       </div>
     </div>
   </div>
 </template>
-<style lang="scss"></style>
+<style lang="scss">
+.card-text {
+  font: "Bellerose";
+}
+</style>
