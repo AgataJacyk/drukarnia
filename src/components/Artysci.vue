@@ -1,5 +1,6 @@
 <template>
-  <div class="card mb-3 ms-5 me-5" style="max-width: 540px">
+  <h2 class="artists">Artyści</h2>
+  <div class="card mb-3" style="max-width: 940px; margin-left: 70px">
     <div class="row g-0">
       <div class="col-md-5">
         <img
@@ -19,7 +20,7 @@
       </div>
     </div>
   </div>
-  <div class="card mb-3 ms-5 me-5" style="max-width: 540px">
+  <div class="card mb-3" style="max-width: 940px; margin-left: 70px">
     <div class="row g-0">
       <div class="col-md-5">
         <img
@@ -43,5 +44,11 @@
 <style lang="scss">
 .card-text {
   font: "Bellerose";
+}
+.artists {
+  text-align: center;
+  font-family: "ShadowedBlack";
+  color: #7c7a7a;
+  padding: 20px;
 }
 </style>
