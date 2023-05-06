@@ -3,20 +3,20 @@
 <template>
     <div class="row">
   <div class="col-sm-6 mb-3 mb-sm-0">
-    <div class="card  text-center">
+    <div class="card  card border-secondary mb-3 bg-transparent text-center">
       <div class="card-body">
         <h2 class="card-title">Special title treatment</h2>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-secondary">Go somewhere</a>
+        <a href="#" class="btn text-center">Go somewhere</a>
       </div>
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="card  text-center">
+    <div class="card  card border-secondary mb-3 bg-transparent text-center">
       <div class="card-body">
         <h2 class="card-title">Special title treatment</h2>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-secondary text-center">Go somewhere</a>
+        <a href="#" class="btn text-center">Go somewhere</a>
       </div>
     </div>
   </div>
@@ -70,11 +70,7 @@ text-align: center;
 .btn:active {
   --s: #0005;
   transition: none;
-}
-.card { 
-background: linear-gradient(72.77deg, #0e0d0d1d 11.72%, #8b8a8a2d 98.52%);
-backdrop-filter: blur(10px);
-}
+}s
 .card-title, .card-text, .btn {
     text-align: center;
 }
