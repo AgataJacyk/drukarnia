@@ -2,34 +2,39 @@
 <template>
     <img class="logo" src="/images/logo.png" />
 <ul>
-  <li>
+  <li><router-link to="/">
     <span><h1>H</h1></span>
-    Home
+    Home</router-link>
   </li>
-  <li>
+  <li><router-link to="/Offer">
     <span><h1>O</h1></span>
-    Oferta
+    Oferta</router-link>
   </li>
-  <li>
+  <li><router-link to="/Proms">
     <span><h1>P</h1></span>
-    Promocje
+    Promocje</router-link>
   </li>
-  <li>
+  <li><router-link to="/Artists">
     <span><h1>A</h1></span>
-    Artyści
+    Artyści</router-link>
   </li>
-  <li>
+  <li><router-link to="/AboutUs">
     <span><h1>O</h1></span>
-   O nas
+   O nas</router-link>
   </li>
-  <li>
+  <li><router-link to="/Cart">
     <span><h1>K</h1></span>
-   Koszyk
+   Koszyk</router-link>
   </li>
 </ul>
 
 </template>
 <style scoped>
+
+a { 
+  text-decoration: none;
+  color:#7c7a7a39;
+}
 
 ul{
   position: fixed;
@@ -73,6 +78,10 @@ li:hover{
 li:hover > span{
   color: #ffffff;
   transform: rotate(-5deg);
+}
+
+li:hover > a {
+  color: #7c7a7a;
 }
 
 span{
