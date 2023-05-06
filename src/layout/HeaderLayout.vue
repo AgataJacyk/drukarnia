@@ -51,7 +51,7 @@ a {
 ul{
   position: fixed;
   right: 2vw;
-  top: 15vh;
+  top: 7vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
@@ -60,7 +60,7 @@ ul{
   line-height: 1.9;
   color: #2d2d2d; 
   width: 350px;
-  height: 76vh;
+  height: 117vh;
   text-transform: capitalize;
   z-index: 10;
 }
@@ -196,7 +196,6 @@ input {
     }
   }
   .menu {
-    background: linear-gradient(180deg, #1B1A18 0%, #252422 100%);
     width: 0;
     height: 0;
     margin-top: 0;
@@ -220,8 +219,7 @@ input {
       color: #ffffff;
       list-style: none;
       width: 100%;
-      margin-top: 40px;
-      font-size: calc(32px + (46 - 32) * ((100vw - 300px) / (1550 - 300)));
+      margin-top: 0;
       font-size: calc(32px + (46 - 32) * ((100vw - 300px) / (1550 - 300)));
     }
   }
@@ -231,7 +229,7 @@ input {
     visibility: visible;
   }
   
-li:hover{
+li:hover {
   margin-left: 0;
   cursor: pointer;
   border-left: 10px solid #252422;

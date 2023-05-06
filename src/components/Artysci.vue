@@ -40,6 +40,7 @@
   </div>
 </template>
 <style scoped>
+
 h1,
 .artists {
   font-family: "ShadowedBlack";

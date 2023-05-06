@@ -1,9 +1,6 @@
 <template>
   <h1 class="title-location">Lokalizacja</h1>
-  <div
-    class="card border-secondary bg-transparent"
-    style="width: 67vw; height: 100%; margin-left: 4vw; padding: 0"
-  >
+  <div class="card border-secondary bg-transparent">
     <iframe
       class="map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2323.1831648784!2d18.581716676716567!3d54.38907967261007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd73bd51f21f8b%3A0x50c8a05c9778d809!2sUniwersytet%20WSB%20Merito%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1683369224203&theme=dark"
@@ -23,6 +20,11 @@
 </template>
 
 <style scoped lang="scss">
+.card {
+  width: 67vw; 
+  height: 100%; 
+  margin-left: 4vw; 
+}
 .title-location {
   font-family: "ShadowedBlack";
   font-size: calc(36px + (48 - 36) * ((100vw - 300px) / (2865 - 300)));
@@ -47,5 +49,12 @@
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+@media (max-width: 1350px) {
+.card {
+  width: 90vw; 
+  height: 100%; 
+  margin-left: 4vw; 
+}
 }
 </style>

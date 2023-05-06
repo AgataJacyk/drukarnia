@@ -117,4 +117,11 @@ text-align: center;
     width: 70vw;
     margin: 5vh 4vw;
 }
+
+@media (max-width: 1350px) {
+  .row { 
+    width: 90vw;
+    margin: 5vh 4vw;
+}
+}
 </style>

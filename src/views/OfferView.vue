@@ -147,4 +147,13 @@ table {
     color: #ffff;
     margin-top: 10vh;
 }
+
+@media (max-width: 1350px) {
+.row, table {
+  width: 90vw;
+}
+.row-cols-md-3, .row-cols-1, table {
+    margin: 4vw;
+}
+}
 </style>
