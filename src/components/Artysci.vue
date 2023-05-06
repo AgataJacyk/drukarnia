@@ -1,6 +1,6 @@
 <template>
-  <h2 class="artists">Artyści</h2>
-  <div class="card mb-3" style="max-width: 940px; margin-left: 70px">
+  <h1 class="artists">Artysci</h1>
+  <div class="card mb-3 border-secondary bg-transparent">
     <div class="row g-0">
       <div class="col-md-5">
         <img
@@ -11,16 +11,15 @@
       </div>
       <div class="col-md-7">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h1 class="card-title">Card title</h1>
           <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="card mb-3" style="max-width: 940px; margin-left: 70px">
+  <div class=" card border-secondary mb-3 bg-transparent mb-3">
     <div class="row g-0">
       <div class="col-md-5">
         <img
@@ -31,24 +30,39 @@
       </div>
       <div class="col-md-7">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h1 class="card-title">Card title</h1>
           <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.d-in
           </p>
         </div>
       </div>
     </div>
   </div>
 </template>
-<style lang="scss">
-.card-text {
-  font: "Bellerose";
-}
+<style scoped>
+h1,
 .artists {
-  text-align: center;
   font-family: "ShadowedBlack";
+  font-size: calc(36px + (48 - 36) * ((100vw - 300px) / (2865 - 300)));
   color: #7c7a7a;
-  padding: 20px;
+  margin-top: 1vh;
+}
+.card-text {
+  font-family: "Bellerose";
+  font-size: calc(26px + (28 - 26) * ((100vw - 300px) / (2865 - 300)));
+  margin: 5%;
+}
+.row {
+  width: 100%;
+}
+.card {
+  width: 70vw;
+  margin: 4vw;
+}
+.col-md-5 {
+  width: auto;
+}
+img {
+  filter: grayscale(100%);
 }
 </style>
