@@ -1,7 +1,11 @@
 <!-- tu pracuje -->
 <template>
     <img class="logo" src="/images/logo.png" />
-<ul>
+    <div class="container">
+  <ul id="nav">
+    <li class="toggle">
+      <div class="bar1"></div><div class="bar2"></div><div class="bar3"></div>
+    </li>
   <li><router-link to="/">
     <span><h1>H</h1></span>
     Home</router-link>
@@ -31,10 +35,13 @@
    Koszyk</router-link>
   </li>
 </ul>
+</div>
+
 
 </template>
-<style scoped>
 
+
+<style scoped>
 a { 
   text-decoration: none;
   color:#7c7a7a39;
@@ -107,4 +114,5 @@ span{
     width: auto;
     margin-left: 4vw;
 }
+
 </style>

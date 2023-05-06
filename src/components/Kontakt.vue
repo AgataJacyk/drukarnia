@@ -35,9 +35,6 @@
   width: 60vw;
   margin-left: 4vw;
 }
-.card {
-  margin-top: 0;
-}
 
 .card-title,
 .card-text {
