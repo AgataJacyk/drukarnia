@@ -1,96 +1,113 @@
 <!-- tu pracuje -->
 <template>
-    <img class="logo" src="/images/logo.png" />
-    <input type="checkbox" class="toggler" />
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div class="mynav">
-        <ul>
-  <li><router-link to="/">
-    <span><h1>H</h1></span>
-    Home</router-link>
-  </li>
-  <li><router-link to="/Offer">
-    <span><h1>O</h1></span>
-    Oferta</router-link>
-  </li>
-  <li><router-link to="/Proms">
-    <span><h1>P</h1></span>
-    Promocje</router-link>
-  </li>
-  <li><router-link to="/Artists">
-    <span><h1>A</h1></span>
-    Artyści</router-link>
-  </li>
-  <li><router-link to="/AboutUs">
-    <span><h1>O</h1></span>
-   O nas</router-link>
-  </li>
-  <li><router-link to="/Contact">
-    <span><h1>K</h1></span>
-   Kontakt</router-link>
-  </li>
-  <li><router-link to="/Cart">
-    <span><h1>K</h1></span>
-   Koszyk</router-link>
-  </li>
-</ul>
-</div>
-</div>
-
-
+  <img class="logo" src="/images/logo.png" />
+  <input type="checkbox" class="toggler" />
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div class="mynav">
+      <ul>
+        <li>
+          <router-link to="/">
+            <span><h1>H</h1></span>
+            Home</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Offer">
+            <span><h1>O</h1></span>
+            Oferta</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Proms">
+            <span><h1>P</h1></span>
+            Promocje</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Artists">
+            <span><h1>A</h1></span>
+            Artyści</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/AboutUs">
+            <span><h1>O</h1></span>
+            O nas</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Contact">
+            <span><h1>K</h1></span>
+            Kontakt</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Cart">
+            <span><h1>K</h1></span>
+            Koszyk</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/Company">
+            <span><h1>O</h1></span>
+            Firmie</router-link
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
-
 <style lang="scss" scoped>
-a { 
+a {
   text-decoration: none;
-  color:#7c7a7a39;
+  color: #7c7a7a39;
 }
 
-ul{
+ul {
   position: fixed;
   right: 2vw;
   top: 7vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
-  white-space:nowrap;
+  white-space: nowrap;
   font-size: 300%;
   line-height: 1.9;
-  color: #2d2d2d; 
+  color: #2d2d2d;
   width: 350px;
   height: 117vh;
   text-transform: capitalize;
   z-index: 10;
 }
 
-li{
+li {
   height: 10%;
-  transition: all .3s ease-out, color .2s .4s ease-out;
-  background: #1B1A18;
+  transition: all 0.3s ease-out, color 0.2s 0.4s ease-out;
+  background: #1b1a18;
   margin-bottom: 5px;
   border-left: 4px solid #2d2d2d;
-  box-shadow: 1px 1px 2px 2px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
   font-family: "Bellerose";
   font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (2865 - 300)));
 }
 
-li h1 { 
-    padding: 60% 0;
-    font-family: "ShadowedBlack";
-    font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (2865 - 300)));
-    color: #7c7a7a;
+li h1 {
+  padding: 60% 0;
+  font-family: "ShadowedBlack";
+  font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (2865 - 300)));
+  color: #7c7a7a;
 }
 
-li:hover{
+li:hover {
   margin-left: -100%;
   cursor: pointer;
   border-left: 10px solid #252422;
   color: #ffffff;
 }
 
-li:hover > span{
+li:hover > span {
   color: #ffffff;
   transform: rotate(-5deg);
 }
@@ -99,7 +116,7 @@ li:hover > a {
   color: #7c7a7a;
 }
 
-span{
+span {
   position: relative;
   display: block;
   width: 60px;
@@ -107,19 +124,19 @@ span{
   text-align: center;
   float: left;
   line-height: 2.1;
-  transition: all .2s .4s ease-out;
+  transition: all 0.2s 0.4s ease-out;
   font-size: 120%;
   margin: 0 3px;
   font-size: 95%;
 }
-input { 
+input {
   display: hidden;
 }
 
 .logo {
-    height: 10vh;
-    width: auto;
-    margin: 1rem 4vw;
+  height: 10vh;
+  width: auto;
+  margin: 1rem 4vw;
 }
 input {
   opacity: 0;
@@ -228,17 +245,17 @@ input {
     transition-delay: 0.1s;
     visibility: visible;
   }
-  
-li:hover {
-  margin-left: 0;
-  cursor: pointer;
-  border-left: 10px solid #252422;
-  color: #ffffff;
-}
 
-li:hover > span{
-  color: #ffffff;
-  transform: rotate(-5deg);
-}
+  li:hover {
+    margin-left: 0;
+    cursor: pointer;
+    border-left: 10px solid #252422;
+    color: #ffffff;
+  }
+
+  li:hover > span {
+    color: #ffffff;
+    transform: rotate(-5deg);
+  }
 }
 </style>
