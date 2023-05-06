@@ -34,9 +34,6 @@
   width: 60vw;
   margin-left: 4vw;
 }
-.card,
-iframe {
-}
 .card-title,
 .card-text {
   font-family: "Bellerose";
