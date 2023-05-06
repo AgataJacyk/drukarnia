@@ -34,4 +34,9 @@
   margin-top: 1vh;
   margin-left: 4vw;
 }
+.card-text {
+  font-family: "Bellerose";
+  font-size: calc(26px + (28 - 26) * ((100vw - 300px) / (2865 - 300)));
+  margin: 2%;
+}
 </style>
