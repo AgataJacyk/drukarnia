@@ -68,7 +68,7 @@ a {
 ul {
   position: fixed;
   right: 2vw;
-  top: 7vh;
+  top: 5vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
@@ -83,7 +83,7 @@ ul {
 }
 
 li {
-  height: 10%;
+  height: 8%;
   transition: all 0.3s ease-out, color 0.2s 0.4s ease-out;
   background: #1b1a18;
   margin-bottom: 5px;
