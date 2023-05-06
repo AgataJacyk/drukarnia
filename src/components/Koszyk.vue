@@ -30,19 +30,19 @@ body {
   margin: auto;
   transition: 0.5s;
 }
-header {
+.header {
   display: grid;
   grid-template-columns: 1fr 50px;
   margin-top: 50px;
 }
-header .shopping {
+.header .shopping {
   position: relative;
   text-align: right;
 }
-header .shopping img {
+.header .shopping img {
   width: 40px;
 }
-header .shopping span {
+.header .shopping span {
   background: red;
   border-radius: 50%;
   display: flex;
