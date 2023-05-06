@@ -50,8 +50,8 @@ a {
 
 ul{
   position: fixed;
-  right: 5vw;
-  top: 15vh;
+  right: 2vw;
+  top: 10vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
@@ -60,23 +60,26 @@ ul{
   line-height: 1.9;
   color: #2d2d2d; 
   width: 350px;
+  height: 76vh;
   text-transform: capitalize;
   z-index: 10;
 }
 
 li{
-  height: 100px;
+  height: 15%;
   transition: all .3s ease-out, color .2s .4s ease-out;
   background: #1B1A18;
   margin-bottom: 5px;
   border-left: 4px solid #2d2d2d;
   box-shadow: 1px 1px 2px 2px rgba(0,0,0,.4);
   font-family: "Bellerose";
+  font-size: calc(30px + (42 - 30) * ((100vw - 300px) / (2865 - 300)));
 }
 
 li h1 { 
     padding: 60% 0;
     font-family: "ShadowedBlack";
+    font-size: calc(26px + (36 - 26) * ((100vw - 300px) / (2865 - 300)));
     color: #7c7a7a;
 }
 

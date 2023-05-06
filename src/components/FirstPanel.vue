@@ -111,7 +111,7 @@
   width: 600px;
   height: 60vh;
   position: relative;
-  margin: 10vh;
+  margin: 5vh 5vw 10vh 5vw;
 }
 
 .image-wrapper img {
