@@ -1,25 +1,23 @@
 <template>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Your Shopping Cart</h1>
-        <div class="shopping">
-          <img src="images/basket.png" />
-          <span class="quantity">0</span>
-        </div>
-      </header>
-
-      <div class="list"></div>
-    </div>
-    <div class="card">
-      <h1>Card</h1>
-      <ul class="listCard"></ul>
-      <div class="checkOut">
-        <div class="total">0</div>
-        <div class="closeShopping">Close</div>
+  <div class="container">
+    <div class="header">
+      <h1>Your Shopping Cart</h1>
+      <div class="shopping">
+        <img src="images/basket.png" />
+        <span class="quantity">0</span>
       </div>
     </div>
-  </body>
+
+    <div class="list"></div>
+  </div>
+  <div class="card">
+    <h1>Card</h1>
+    <ul class="listCard"></ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
