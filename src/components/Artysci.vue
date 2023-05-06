@@ -40,12 +40,4 @@
     </div>
   </div>
 </template>
-<style lang="scss">
-.col-md-8,
-.col-md-4 {
-  background-color: #212529;
-}
-.img-fluid {
-  height: 100%;
-}
-</style>
+<style lang="scss"></style>
