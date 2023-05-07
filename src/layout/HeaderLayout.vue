@@ -68,7 +68,7 @@ a {
 ul {
   position: fixed;
   right: 2vw;
-  top: 5vh;
+  top: 2vh;
   padding: 0;
   list-style-type: none;
   text-align: left;
@@ -83,10 +83,10 @@ ul {
 }
 
 li {
-  height: 8%;
+  height: 10%;
   transition: all 0.3s ease-out, color 0.2s 0.4s ease-out;
   background: #1b1a18;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   border-left: 4px solid #2d2d2d;
   box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.4);
   font-family: "Bellerose";
